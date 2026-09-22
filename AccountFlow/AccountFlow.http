@@ -1,0 +1,29 @@
+@host = http://localhost:5205
+@email = user@example.com
+@password = Strong1!Password
+@accessToken = paste-an-admin-access-token-here
+
+### Register
+POST {{host}}/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Ada",
+  "surname": "Lovelace",
+  "email": "{{email}}",
+  "password": "{{password}}"
+}
+
+### Login after verifying the account
+POST {{host}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "{{email}}",
+  "password": "{{password}}"
+}
+
+### Admin dashboard statistics
+GET {{host}}/api/admin/stats/daily
+Authorization: Bearer {{accessToken}}
+Accept: application/json

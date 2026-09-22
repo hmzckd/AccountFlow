@@ -1,0 +1,51 @@
+# ---------- .NET ----------
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.user
+*.suo
+*.userprefs
+project.lock.json
+artifacts/
+
+# ---------- Visual Studio ----------
+.vs/
+*.vspscc
+*.vssscc
+*.pidb
+*.svclog
+*.scc
+
+# ---------- Rider / VS Code ----------
+.idea/
+.vscode/
+
+# ---------- Secrets / local config ----------
+# Real secrets live here (JWT key, SMTP password) - never commit them.
+appsettings.Development.json
+appsettings.*.Local.json
+secrets.json
+*.pfx
+
+# ---------- Node / frontend ----------
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------- OS ----------
+Thumbs.db
+.DS_Store
+
+# ---------- Logs ----------
+*.log
+
+# ---------- Local agent tooling ----------
+.serena/
