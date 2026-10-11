@@ -157,7 +157,3 @@ Example requests are available in [`AccountFlow/AccountFlow.http`](AccountFlow/A
 - Verification resends use an atomic cooldown and do not reveal whether an account exists.
 - JWT and token lifetime settings are validated before the application starts.
 - The MongoDB email index prevents duplicate accounts during concurrent registration.
-
-## License
-
-This project is available under the [MIT License](LICENSE).
